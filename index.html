@@ -6,298 +6,176 @@
     <title>Fahad Shaikh | Data Scientist</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 </head>
 <body>
-    <div class="preloader">
-        <div class="loader">
-            <span class="letter">F</span>
-            <span class="letter">S</span>
+
+    <div id="header">
+        <div class="header-content">
+            <div class="header-description">
+                <h1>Fahad Shaikh</h1>
+                <h2>With nearly five years of hands-on experience in data analytics, business intelligence, and machine learning at companies like <a href="https://www.endeavorco.com/" target="_blank" rel="noopener noreferrer">Endeavor Group</a>, <a href="https://www.mu-sigma.com/" target="_blank" rel="noopener noreferrer">Mu Sigma</a>, and <a href="https://www.kpit.com/" target="_blank" rel="noopener noreferrer">KPIT</a>, I’m passionate about turning complex data into clear, actionable insights that drive real impact. I’ve worked with Fortune 100 companies to develop people analytics dashboards, customer segmentation models, anomaly detection systems, and automated reporting tools—helping teams make smarter decisions and innovate faster. Currently, I am pursuing my Master’s in Data Science at <a href="https://www.pace.edu/" target="_blank" rel="noopener noreferrer">Pace University</a>, where I continue to build practical, scalable solutions that solve real-world problems and create measurable value.</h2>
+                <div class="header-icons">
+                    <a href="https://www.linkedin.com/in/fahad-shaikh-b807b6147/" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Fahad-sha" target="_blank" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:fs12516n@pace.edu" aria-label="Email" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://x.com/faddy1997" target="_blank" aria-label="Twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://drive.google.com/file/d/162Zt6CIB3E3Gj0blQG0HWzGO-WgcHQ1Q/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="resume-link" aria-label="View Resume" title="View Resume"><i class="fas fa-file-pdf"></i></a>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 
-    <header>
-        <div class="logo">
-            <a href="#home">FS</a>
+    <hr>
+    
+    <div id="timeline" class="container">
+        <div class="entry">
+            <div class="entry-left">
+                <div class="timespan">2024 - 2026</div>
+                <div class="icon">
+                    <img src="https://logo.clearbit.com/pace.edu" alt="Pace University Logo">
+                </div>
+            </div>
+            <div class="description">
+                <h3>MS in Data Science @ <a href="https://www.pace.edu/" target="_blank">Pace University</a>, NYC</h3>
+                <p>Pursuing a Master's degree, relevant coursework includes Deep Learning, Machine Learning, Reinforcement Learning, NLP, and Big Data Analytics.</p>
+                <ul>
+                    <li>Actively contributed to the <a href="https://www.linkedin.com/company/pace-data-science-club/posts/?feedView=all" target="_blank" rel="noopener noreferrer">Data Science Society</a> as a core member, collaborating on community-building initiatives and knowledge-sharing sessions.</li>
+                    <li>Supported and hosted <a href="https://www.thundercompute.com/" target="_blank" rel="noopener noreferrer">Thunder Compute</a>’s founders at Pace for a 75+ attendee event on GPU virtualization in AI/ML, organizing live demos and crowd management for hands-on learning.</li>
+                    <li>Helped organize and lead interactive sessions for students, including “How to Build a Chatbot” (hands-on workshop) and a practical Git & Literature Review session for data science research projects.</li>
+                </ul>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-            </ul>
-        </nav>
-        <div class="menu-toggle">
-            <i class="fas fa-bars"></i>
+
+        <div class="entry">
+            <div class="entry-left">
+                <div class="timespan">2023 - 2024</div>
+                <div class="icon">
+                     <img src="endeavor.png" alt="Endeavor Logo">
+                </div>
+            </div>
+            <div class="description">
+                <h3>Data Scientist @ <a href="https://www.endeavorco.com/" target="_blank">Endeavor Group (IMG Media)</a>, NYC</h3>
+                 <ul>
+                    <li>Led the end-to-end transformation of People Analytics for a 500-member HR team across Endeavor Group subsidiaries including <a href="https://www.ufc.com/" target="_blank">UFC</a>, <a href="https://www.wwe.com/" target="_blank">WWE</a>, <a href="https://www.img.com/" target="_blank">IMG</a>, and <a href="https://www.wmeagency.com/" target="_blank">WME</a>, by migrating legacy reporting into <a href="https://www.visier.com/" target="_blank">Visier</a> and centralizing key workforce metrics for strategic alignment.</li>
+                    <li>Engineered end-to-end NLP pipelines using Transformer-based models for semantic analysis of resumes and exit surveys, extracting actionable insights to inform HR strategy.</li>
+                    <li>Automated the machine learning lifecycle from data ingestion to model deployment and monitoring using <a href="https://azure.microsoft.com/en-us/products/data-factory/" target="_blank">Azure Data Factory</a> and <a href="https://azure.microsoft.com/en-us/products/machine-learning/" target="_blank">Azure ML</a>.</li>
+                    <li>Integrated <a href="https://www.workday.com/" target="_blank">Workday</a> Reporting with <a href="https://www.snowflake.com/" target="_blank">Snowflake</a> using Workday Prism pipelines to support real-time HR data access across both <a href="https://www.visier.com/" target="_blank">Visier</a> and <a href="https://powerbi.microsoft.com/" target="_blank">Power BI</a>.</li>
+                    <li>Collaborated with DEI, Talent, and People Strategy teams to define metric logic, dashboard structures, and drill-down features tailored for HR leadership.</li>
+                </ul>
+            </div>
         </div>
-    </header>
+        <div class="entry">
+            <div class="entry-left">
+                <div class="timespan">2019 - 2022</div>
+                <div class="icon">
+                    <img src="musigma.png" alt="Mu Sigma Logo">
+                </div>
+            </div>
+            <div class="description">
+                <h3>Sr Data Consultant @ <a href="https://www.mu-sigma.com/" target="_blank">Mu Sigma</a>, Bengaluru</h3>
+                <p class="client-note">Clients included <a href="https://www.microsoft.com" target="_blank">Microsoft</a> and <a href="https://www.citigroup.com" target="_blank">Citigroup</a></p>
+                <ul>
+                    <li>Orchestrated LSTM-based NLP pipelines and BERT embeddings to extract insights from millions of <a href="https://www.microsoft.com/en-us/microsoft-viva" target="_blank">Microsoft Viva</a> support interactions, enabling precise customer segmentation and AI-driven feature development.</li>
+                    <li>Architected scalable cloud infrastructure on <a href="https://aws.amazon.com/" target="_blank">AWS</a> (EMR, S3, Redshift) to support distributed training of machine learning models on terabyte-scale datasets.</li>
+                    <li>Partnered with accounting and sales teams at a prominent financial services firm to develop and deploy advanced <a href="https://powerbi.microsoft.com/" target="_blank">Power BI</a> dashboards, enabling effective management of 1 billion dollars in business operations.</li>
+                    <li>Designed and implemented advanced anomaly detection systems for <a href="https://www.citigroup.com/" target="_blank">Citigroup</a> using machine learning algorithms (Isolation Forest, One-Class SVM), enhancing fraud detection accuracy.</li>
+                    <li>Constructed and operationalized time-series forecasting models (ARIMA, Prophet) to predict key business metrics, improving strategic planning and resource allocation.</li>
+                    <li>Automated <a href="https://www.lseg.com/" target="_blank">LSEG</a> trading report generation using Python, <a href="https://www.tableau.com/" target="_blank">Tableau</a>, and <a href="https://www.oracle.com/" target="_blank">Oracle</a>, reducing manual effort by 150 hours monthly.</li>
+                </ul>
+                <div class="client-logos-container">
+                    <h4 class="client-logos-title">Key Clients Included:</h4>
+                    <div class="client-logos-grid">
+                        <a href="https://www.microsoft.com" target="_blank" title="Microsoft"><img src="microsoft.png" alt="Microsoft Logo"></a>
+                        <a href="https://www.citigroup.com" target="_blank" title="Citigroup"><img src="citigroup.png" alt="Citigroup Logo"></a>
+                        <a href="https://www.walmart.com" target="_blank" title="Walmart"><img src="walmart.png" alt="Walmart Logo"></a>
+                        <a href="https://www.lseg.com" target="_blank" title="LSEG"><img src="lseg.png" alt="LSEG Logo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="entry">
+             <div class="entry-left">
+                <div class="timespan">2018 - 2019</div>
+                <div class="icon">
+                    <img src="https://logo.clearbit.com/kpit.com" alt="KPIT Logo">
+                </div>
+            </div>
+            <div class="description">
+                <h3>Trainee @ <a href="https://www.kpit.com/" target="_blank">KPIT</a>, Pune</h3>
+                <ul>
+                    <li>Contributed to the development of an intelligent adaptive cruise control system, implementing core control logic in Embedded C for automotive AI applications.</li>
+                    <li>Managed technical requirements for automotive ECUs, focusing on functional safety standards for embedded AI systems.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-    <main>
-        <section id="home" class="hero section-spacing">
-            <div class="hero-content fade-in-on-load">
-                <p class="hero-intro">Hello, I'm</p>
-                <h1 class="hero-name">Fahad Shaikh.</h1>
-                <h2 class="hero-tagline"><span id="typewriter-text"></span><span class="cursor">|</span></h2>
-                <p class="hero-description">
-                    A Data Scientist with a Master's from Pace University, skilled in building and deploying end-to-end ML & AI solutions that drive business impact.
-                </p>
-                <div class="hero-cta-buttons">
-                    <a href="#projects" class="btn primary-btn">View My Work</a>
-                    <a href="Fahad_Shaikh_Data_Science_Resume (1).pdf" class="btn secondary-btn" download>My Resume</a>
-                </div>
-                 <div class="social-links-hero fade-in-on-load">
-                    <a href="https://www.linkedin.com/in/fahad-shaikh-b807b6147/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin icon-animated"></i></a>
-                    <a href="https://github.com/Fahad-sha" target="_blank" aria-label="GitHub"><i class="fab fa-github icon-animated"></i></a>
-                    <a href="mailto:fs12516n@pace.edu" aria-label="Email"><i class="fas fa-envelope icon-animated"></i></a>
-                    <a href="https://x.com/faddy1997" target="_blank" aria-label="Twitter"><i class="fab fa-twitter icon-animated"></i></a>
+    <div class="section-container">
+        <div id="projects" class="container">
+            <div class="section-title">Projects</div>
+            <div class="project-entry">
+                <div class="project-icon"><i class="fas fa-theater-masks"></i></div>
+                <div class="project-description">
+                    <a href="https://github.com/Fahad-sha/GPT-Shakespeare-Karpathy-inspired-" target="_blank">GPT Shakespeare (Karpathy-inspired)</a> — Implemented a character-level GPT model from scratch in PyTorch to generate Shakespearean text and demonstrate core transformer mechanics.
                 </div>
             </div>
-            <div class="hero-clients-container fade-in-on-load">
-                 <h3 class="clients-title">I've worked with </h3>
-                <div class="clients-grid-hero">
-                    <div class="client-logo-item"><img src="endeavor.png" alt="Endeavor Group"><p>Endeavor</p></div>
-                    <div class="client-logo-item"><img src="musigma.png" alt="Mu Sigma"><p>Mu Sigma</p></div>
-                    <div class="client-logo-item"><img src="microsoft.png" alt="Microsoft"><p>Microsoft</p></div>
-                    <div class="client-logo-item"><img src="citigroup.png" alt="Citigroup"><p>Citigroup</p></div>
+            <div class="project-entry">
+                <div class="project-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                <div class="project-description">
+                    <a href="https://github.com/Fahad-sha/Earnings-call-summerizer-RAG" target="_blank">Earnings Call Summarizer</a> — Developed an AI pipeline using sentence-transformers and FAISS to generate concise, citation-aware summaries of earnings call transcripts.
                 </div>
             </div>
-        </section>
+            <div class="project-entry">
+                <div class="project-icon"><i class="fab fa-youtube"></i></div>
+                <div class="project-description">
+                    <a href="https://github.com/Fahad-sha/youtube-summery-videos" target="_blank">YouTube Video Summarizer</a> — Built an AI pipeline that generates summaries of YouTube videos using transcript analysis and multimodal language models.
+                </div>
+            </div>
+            <div class="project-entry">
+                <div class="project-icon"><i class="fas fa-brain"></i></div>
+                <div class="project-description">
+                    <a href="https://github.com/Fahad-sha/Backpropagation-From-Scratch-based-on-andrej-karapathy" target="_blank">Backpropagation From Scratch</a> — A from-scratch implementation of the backpropagation algorithm to build and train neural networks at a fundamental level.
+                </div>
+            </div>
+            <div class="project-entry">
+                <div class="project-icon"><i class="fas fa-calculator"></i></div>
+                <div class="project-description">
+                    <a href="https://github.com/Fahad-sha/Ml-models-numpy-Implementation" target="_blank">ML Models From Scratch</a> — Implemented various core machine learning algorithms from scratch using only NumPy to demonstrate a deep understanding of their inner workings.
+                </div>
+            </div>
+            <div class="project-entry">
+                <div class="project-icon"><i class="fas fa-plane-departure"></i></div>
+                <div class="project-description">
+                    <a href="https://github.com/Fahad-sha/Flight-Delay-Prediction-" target="_blank">Flight Delay Prediction</a> — Built a predictive model to classify flight delays using XGBoost and engineered a scalable data pipeline on AWS.
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <section id="about" class="about section-spacing">
-            <div class="section-heading reveal-on-scroll">
-                <p class="section-subheading">Who I Am</p>
-                <h2 class="section-title">A Data Scientist's Vision.</h2>
-            </div>
-            <div class="about-content-grid">
-                <div class="about-text-column reveal-on-scroll">
-                    <p>I am a results-driven Data Scientist pursuing a Master's in Data Science from Pace University (GPA 4.0). With extensive experience at firms like <span class="highlight">Endeavor</span> and <span class="highlight">Mu Sigma</span>, I specialize in transforming complex data into strategic assets.</p>
-                    <p>My expertise lies in developing and deploying end-to-end <span class="highlight">NLP pipelines</span>, <span class="highlight">time-series forecasting models</span>, and <span class="highlight">anomaly detection systems</span>. I am passionate about architecting scalable ML solutions on cloud platforms like Azure and AWS to tackle real-world challenges.</p>
-                </div>
-                <div class="about-details-column reveal-on-scroll">
-                    <div class="detail-card">
-                        <i class="fas fa-user-graduate icon-animated"></i>
-                        <h3>Education</h3>
-                        <p>MS in Data Science, Pace University</p>
-                        <p>Expected Jan 2026</p>
-                    </div>
-                    <div class="detail-card">
-                        <i class="fas fa-map-marker-alt icon-animated"></i>
-                        <h3>Location</h3>
-                        <p>New York City</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="experience section-spacing">
-            <div class="section-heading reveal-on-scroll">
-                <p class="section-subheading">My Journey</p>
-                <h2 class="section-title">Professional Milestones.</h2>
-            </div>
-            <div class="experience-timeline">
-                <div class="timeline-entry reveal-on-scroll">
-                    <div class="timeline-date">Nov 2023 - Aug 2024</div>
-                    <div class="timeline-content">
-                        <h3>Data Scientist</h3>
-                        <h4>Endeavor Group (IMG Media), NYC </h4>
-                        <ul>
-                            <li>Led the end-to-end transformation of People Analytics for a 500-member HR team.</li>
-                            <li>Engineered end-to-end NLP pipelines using Transformer-based models for semantic analysis of resumes and exit surveys.</li>
-                            <li>Automated the machine learning lifecycle using Azure Data Factory and Azure ML.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-entry reveal-on-scroll">
-                    <div class="timeline-date">Apr 2019 - Jun 2022</div>
-                    <div class="timeline-content">
-                        <h3>Sr Data Consultant</h3>
-                        <h4>Mu Sigma, Bengaluru </h4>
-                        <ul>
-                            <li>Developed and deployed advanced Power BI dashboards to manage $1 billion in business operations for a financial services firm.</li>
-                            <li>Orchestrated LSTM-based NLP pipelines and BERT embeddings to extract insights from millions of Microsoft Viva support interactions.</li>
-                            <li>Designed advanced anomaly detection systems for Citigroup using Isolation Forest and One-Class SVM.</li>
-                            <li>Constructed time-series forecasting models (ARIMA, Prophet) to predict key business metrics.</li>
-                            <li>Architected scalable cloud infrastructure on AWS (EMR, S3, Redshift) for distributed model training.</li>
-                        </ul>
-                    </div>
-                </div>
-                 <div class="timeline-entry reveal-on-scroll">
-                    <div class="timeline-date">Aug 2018 - Mar 2019</div>
-                    <div class="timeline-content">
-                        <h3>Trainee</h3>
-                        <h4>KPIT, Pune </h4>
-                        <ul>
-                            <li>Contributed to developing an intelligent adaptive cruise control system in Embedded C.</li>
-                            <li>Managed technical requirements for automotive ECUs, focusing on functional safety standards.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="projects section-spacing">
-            <div class="section-heading reveal-on-scroll">
-                <p class="section-subheading">My Latest Work</p>
-                <h2 class="section-title">Projects That Matter.</h2>
-            </div>
-            <div class="projects-grid">
-                <a href="https://github.com/Fahad-sha/GPT-Shakespeare-Karpathy-inspired-" target="_blank" class="project-card reveal-on-scroll">
-                    <div class="project-icon"><i class="fas fa-theater-masks"></i></div>
-                    <h3 class="project-title">GPT Shakespeare (Karpathy-inspired) </h3>
-                    <p class="project-description">Implemented a character-level GPT model from scratch in PyTorch to generate Shakespearean text and demonstrate core transformer mechanics.</p>
-                    <div class="project-tags">
-                        <span>PyTorch</span><span>Transformers</span><span>NLP</span>
-                    </div>
-                    <span class="project-link-indicator">View on GitHub <i class="fas fa-arrow-right"></i></span>
-                </a>
-                <a href="https://github.com/Fahad-sha/Earnings-call-summerizer-RAG" target="_blank" class="project-card reveal-on-scroll">
-                    <div class="project-icon"><i class="fas fa-file-invoice-dollar"></i></div>
-                    <h3 class="project-title">Earnings Call Summarizer </h3>
-                    <p class="project-description">Developed an AI pipeline using sentence-transformers and FAISS to generate concise, citation-aware summaries of earnings call transcripts.</p>
-                    <div class="project-tags">
-                        <span>RAG</span><span>FAISS</span><span>LangChain</span><span>NLP</span>
-                    </div>
-                    <span class="project-link-indicator">View on GitHub <i class="fas fa-arrow-right"></i></span>
-                </a>
-                <a href="https://github.com/Fahad-sha/youtube-summery-videos" target="_blank" class="project-card reveal-on-scroll">
-                    <div class="project-icon"><i class="fab fa-youtube"></i></div>
-                    <h3 class="project-title">YouTube Video Summarizer </h3>
-                    <p class="project-description">Built an AI pipeline that generates summaries of YouTube videos using transcript analysis and multimodal language models (TinyLlama, sentence-transformers).</p>
-                    <div class="project-tags">
-                        <span>Multimodal</span><span>TinyLlama</span><span>RAG</span>
-                    </div>
-                    <span class="project-link-indicator">View on GitHub <i class="fas fa-arrow-right"></i></span>
-                </a>
-                 <a href="https://github.com/Fahad-sha/Backpropagation-From-Scratch-based-on-andrej-karapathy" target="_blank" class="project-card reveal-on-scroll">
-                    <div class="project-icon"><i class="fas fa-brain"></i></div>
-                    <h3 class="project-title">Backpropagation From Scratch</h3>
-                    <p class="project-description">A from-scratch implementation of the backpropagation algorithm, inspired by Andrej Karpathy, to build and train neural networks at a fundamental level.</p>
-                    <div class="project-tags">
-                        <span>PyTorch</span><span>Neural Networks</span><span>Core ML</span>
-                    </div>
-                    <span class="project-link-indicator">View on GitHub <i class="fas fa-arrow-right"></i></span>
-                </a>
-                 <a href="https://github.com/Fahad-sha/Ml-models-numpy-Implementation" target="_blank" class="project-card reveal-on-scroll">
-                    <div class="project-icon"><i class="fas fa-calculator"></i></div>
-                    <h3 class="project-title">ML Models From Scratch</h3>
-                    <p class="project-description">Implemented various core machine learning algorithms from scratch using only NumPy to demonstrate a deep understanding of their inner workings.</p>
-                    <div class="project-tags">
-                        <span>NumPy</span><span>Python</span><span>Core ML</span>
-                    </div>
-                    <span class="project-link-indicator">View on GitHub <i class="fas fa-arrow-right"></i></span>
-                </a>
-                 <a href="https://github.com/Fahad-sha/Flight-Delay-Prediction-" target="_blank" class="project-card reveal-on-scroll">
-                    <div class="project-icon"><i class="fas fa-plane-departure"></i></div>
-                    <h3 class="project-title">Flight Delay Prediction</h3>
-                    <p class="project-description">Built a predictive model to classify flight delays using XGBoost and engineered a scalable data pipeline on AWS (EC2, EMR) for processing.</p>
-                    <div class="project-tags">
-                        <span>XGBoost</span><span>AWS</span><span>Machine Learning</span>
-                    </div>
-                    <span class="project-link-indicator">View on GitHub <i class="fas fa-arrow-right"></i></span>
-                </a>
-            </div>
-        </section>
-        
-        <section id="skills" class="skills section-spacing">
-            <div class="section-heading reveal-on-scroll">
-                <p class="section-subheading">My Capabilities</p>
-                <h2 class="section-title">Tools & Technologies.</h2>
-            </div>
-            <div class="skills-container">
-                <div class="skills-category-card reveal-on-scroll">
+    <div class="section-container gray-bg">
+        <div id="skills" class="container">
+            <div class="section-title">Skills</div>
+            <div class="skills-grid">
+                <div>
                     <h3>Programming, ML & AI</h3>
-                    <div class="skills-tags">
-                        <span>Python</span><span>C++</span><span>SQL</span><span>Scikit-learn</span><span>TensorFlow</span><span>Keras</span><span>PyTorch</span><span>Pandas</span><span>NumPy</span><span>OpenCV</span><span>LangChain</span><span>ANN</span><span>CNN</span><span>RNN</span><span>Transformers</span><span>Autoencoders</span>
-                    </div>
+                    <p>Python, C++, SQL, Scikit-learn, TensorFlow, Keras, PyTorch, Pandas, NumPy, OpenCV, LangChain, ANN, CNN, RNN, Transformers, Autoencoders</p>
                 </div>
-                <div class="skills-category-card reveal-on-scroll">
+                <div>
                     <h3>Cloud, Databases & DevOps</h3>
-                    <div class="skills-tags">
-                        <span>Azure</span><span>AWS (S3, Redshift, EMR)</span><span>Oracle</span><span>Snowflake</span><span>Databricks</span><span>Docker</span><span>Kubernetes</span><span>Git</span><span>CI/CD</span><span>JIRA</span>
-                    </div>
+                    <p>Azure, AWS (S3, Redshift, EMR), Oracle, Snowflake, Databricks, Docker, Kubernetes, Git, CI/CD, JIRA</p>
                 </div>
-                <div class="skills-category-card reveal-on-scroll">
+                <div>
                     <h3>Visualization</h3>
-                    <div class="skills-tags">
-                        <span>Power BI</span><span>Tableau</span><span>Matplotlib</span><span>Plotly</span><span>ChromaDB</span>
-                    </div>
+                    <p>Power BI, Tableau, Matplotlib, Plotly, ChromaDB</p>
                 </div>
             </div>
-        </section>
-
-        <section id="achievements" class="achievements section-spacing">
-            <div class="section-heading reveal-on-scroll">
-                <p class="section-subheading">Recognitions</p>
-                <h2 class="section-title">Achievements & Certifications.</h2>
-            </div>
-            <div class="achievements-grid">
-                <div class="achievement-column reveal-on-scroll">
-                    <h3 class="column-title">Achievements</h3>
-                    <div class="achievement-item">
-                        <i class="fas fa-trophy icon-animated"></i>
-                        <div>
-                            <h4>Impact Award, LSEG </h4>
-                            <p>Redesigned revenue-risk model, resulting in $400K annual savings.</p>
-                        </div>
-                    </div>
-                    <div class="achievement-item">
-                        <i class="fas fa-award icon-animated"></i>
-                        <div>
-                            <h4>Spot Awards, Mu Sigma </h4>
-                            <p>Delivered critical solutions for Microsoft and Citigroup, recognized for exceptional contributions.</p>
-                        </div>
-                    </div>
-                    <div class="achievement-item">
-                        <i class="fas fa-code-branch icon-animated"></i>
-                        <div>
-                            <h4>Smart India Hackathon </h4>
-                            <p>Participant, 2017.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="certification-column reveal-on-scroll">
-                    <h3 class="column-title">Certifications</h3>
-                    <div class="certification-item">
-                        <i class="fas fa-certificate icon-animated"></i>
-                        <div>
-                            <h4>DeepLearning.AI TensorFlow Developer </h4>
-                        </div>
-                    </div>
-                    <div class="certification-item">
-                        <i class="fas fa-certificate icon-animated"></i>
-                        <div>
-                            <h4>Hugging Face NLP Specialization </h4>
-                        </div>
-                    </div>
-                    <div class="certification-item">
-                        <i class="fas fa-certificate icon-animated"></i>
-                        <div>
-                            <h4>Google Advanced Data Analytics </h4>
-                        </div>
-                    </div>
-                    <div class="certification-item">
-                        <i class="fas fa-certificate icon-animated"></i>
-                        <div>
-                            <h4>AWS Certified Machine Learning – Foundational </h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Fahad Shaikh. All Rights Reserved.</p>
-    </footer>
-
-    <a href="#home" class="back-to-top">
-        <i class="fas fa-chevron-up"></i>
-    </a>
-
+        </div>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
