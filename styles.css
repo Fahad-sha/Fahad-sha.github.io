@@ -83,16 +83,26 @@ hr {
     margin: 20px 0 0 0;
 }
 
-/* --- HEADER --- */
-#header {
-    padding: 40px 20px;
-}
-.header-content {
-    max-width: 800px;
+/* --- HEADER & INTRODUCTION --- */
+#header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
     margin: 0 auto;
+    padding: 40px 20px;
 }
 .header-description {
     flex: 1;
+    margin-right: 30px;
+}
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--bg-color-alt);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .header-icons {
     display: flex;
@@ -128,11 +138,23 @@ body.dark-theme .theme-toggle .fa-sun {
 body.dark-theme .theme-toggle .fa-moon {
     display: none;
 }
+#introduction {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#introduction p {
+    font-size: 1.1rem;
+    color: var(--text-color-light);
+    line-height: 1.7;
+    text-align: left;
+}
+
 
 /* --- TIMELINE --- */
 #timeline {
     position: relative;
-    padding: 40px 0;
+    padding: 20px 0;
+    border-top: 1px solid var(--border-color);
 }
 #timeline::before {
     content: '';
@@ -233,32 +255,26 @@ body.dark-theme .theme-toggle .fa-moon {
     text-align: center;
     color: var(--text-color);
 }
-.project-entry {
+.project-entry, .skill-entry {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
-.project-icon {
+.project-icon, .skill-icon {
     font-size: 1.2rem;
     color: var(--link-color);
     margin-right: 15px;
     width: 20px;
     padding-top: 2px;
 }
-.project-description {
+.project-description, .skill-description {
     flex: 1;
 }
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-.skills-grid h3 {
-    color: var(--link-color);
+.skill-description h3 {
     font-size: 1.1rem;
+    color: var(--link-color);
 }
-.skills-grid p {
+.skill-description p {
     color: var(--text-color-light);
     font-size: 0.95rem;
     line-height: 1.7;
@@ -266,7 +282,24 @@ body.dark-theme .theme-toggle .fa-moon {
 
 /* --- RESPONSIVE DESIGN --- */
 @media (max-width: 768px) {
+    #header .header-content {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .header-description {
+        margin-right: 0;
+        margin-top: 20px;
+    }
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
     h1 { font-size: 2rem; }
+    #timeline {
+       padding: 40px 20px 20px 20px;
+    }
     #timeline::before {
        left: 20px;
     }
