@@ -7,7 +7,7 @@ export const gptFromScratch = {
     "Step-by-step miniature GPT build in PyTorch: tokenization → attention → training → generation",
   category: "Foundational Deep Learning",
 
-  repoUrl: "https://github.com/<your-username>/gpt-from-scratch",
+  repoUrl: "https://github.com/Fahad-sha/GPT-Shakespeare-Karpathy-inspired-",
   liveUrl: "",
 
   archImage: "/images/gpt-from-scratch-arch.jpg",
