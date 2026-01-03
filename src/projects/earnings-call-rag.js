@@ -6,7 +6,7 @@ export const earningsCallRag = {
   subtitle: "Financial analysis tool for earnings transcripts using RAG + structured outputs",
   category: "Applied AI & Development",
 
-  repoUrl: "https://github.com/<your-username>/earnings-call-rag",
+  repoUrl: "https://github.com/Fahad-sha/Earnings-call-summerizer-RAG",
   liveUrl: "https://<your-live-link>/", // optional
 
   archImage: "/images/earnings-call-rag-arch.jpg",

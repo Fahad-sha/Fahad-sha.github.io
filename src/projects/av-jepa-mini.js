@@ -7,7 +7,7 @@ export const avJepaMini = {
     "Learn joint audio–visual representations by predicting one modality’s embedding from the other (JEPA-style, no negatives)",
   category: "Advanced Research",
 
-  repoUrl: "https://github.com/<your-username>/av-jepa-mini",
+  repoUrl: "https://github.com/Fahad-sha/Audio-Visual-JEPA-mini-",
   liveUrl: "https://<your-live-link>/", // optional
 
   // Replace this JPEG later with your exported architecture diagram
