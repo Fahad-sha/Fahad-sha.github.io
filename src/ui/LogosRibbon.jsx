@@ -15,7 +15,7 @@ export default function LogosRibbon() {
     <section className="py-8">
       <div className="mx-auto max-w-6xl">
         <div className="text-center text-xs font-semibold tracking-widest text-zinc-500">
-          TRUSTED BY / EXPERIENCE WITH
+          EXPERIENCE WITH
         </div>
         <div className="mt-6 overflow-hidden rounded-2xl border border-zinc-200 bg-white/70 shadow-sm backdrop-blur">
           <div className="marquee gap-10 px-6 py-5 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
