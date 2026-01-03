@@ -7,7 +7,7 @@ export const backpropZeroToHero = {
     "From-scratch gradients via computational graphs: forward pass, chain rule, and parameter updates",
   category: "Foundational Deep Learning",
 
-  repoUrl: "https://github.com/<your-username>/backpropagation-zero-to-hero",
+  repoUrl: "https://github.com/Fahad-sha/Backpropagation-From-Scratch-based-on-andrej-karapathy",
   liveUrl: "",
 
   archImage: "/images/backpropagation-arch.jpg",
