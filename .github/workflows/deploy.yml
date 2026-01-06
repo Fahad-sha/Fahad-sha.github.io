@@ -25,11 +25,20 @@ jobs:
           node-version: 20
           cache: npm
 
-      - run: npm install
+      # Use npm ci when package-lock.json exists; fallback to npm install otherwise
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
 
-      - run: npm run build
+      - name: Build
+        run: npm run build
 
-      - uses: actions/upload-pages-artifact@v3
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
