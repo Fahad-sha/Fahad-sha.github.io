@@ -24,24 +24,26 @@ jobs:
         with:
           node-version: 20
 
-      - name: Verify project files
+      - name: Show repo root
         run: |
-          node -v
-          npm -v
+          pwd
           ls -la
-          test -f package.json
 
-      - name: Clean install dependencies
+      - name: Install dependencies (must create node_modules)
         run: |
+          set -e
           npm cache clean --force
           rm -rf node_modules
           npm install --no-audit --no-fund
+          echo "---- sanity checks ----"
+          test -d node_modules
+          test -f node_modules/.bin/vite
+          node -p "require('./package.json').devDependencies.vite"
 
-      - name: Build
-        run: npx vite build
+      - name: Build (uses local vite)
+        run: npm run build
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
