@@ -23,22 +23,25 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
+          cache: false   # IMPORTANT: disable npm cache (avoids npm crash)
 
-      # Use npm ci when package-lock.json exists; fallback to npm install otherwise
-      - name: Install dependencies
+      - name: Verify project files
         run: |
-          if [ -f package-lock.json ]; then
-            npm ci
-          else
-            npm install
-          fi
+          node -v
+          npm -v
+          ls -la
+          test -f package.json
+
+      - name: Clean install dependencies
+        run: |
+          npm cache clean --force
+          rm -rf node_modules package-lock.json
+          npm install --no-audit --no-fund
 
       - name: Build
-        run: npm run build
+        run: npx vite build
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
