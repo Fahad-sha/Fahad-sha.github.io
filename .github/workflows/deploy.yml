@@ -24,26 +24,20 @@ jobs:
         with:
           node-version: 20
 
-      - name: Show repo root
-        run: |
-          pwd
-          ls -la
+      - name: Enable Corepack (pnpm)
+        run: corepack enable
 
-      - name: Install dependencies (must create node_modules)
-        run: |
-          set -e
-          npm cache clean --force
-          rm -rf node_modules
-          npm install --no-audit --no-fund
-          echo "---- sanity checks ----"
-          test -d node_modules
-          test -f node_modules/.bin/vite
-          node -p "require('./package.json').devDependencies.vite"
+      - name: Use pnpm
+        run: corepack prepare pnpm@9.15.3 --activate
 
-      - name: Build (uses local vite)
-        run: npm run build
+      - name: Install dependencies
+        run: pnpm install --no-frozen-lockfile
 
-      - uses: actions/upload-pages-artifact@v3
+      - name: Build
+        run: pnpm run build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
