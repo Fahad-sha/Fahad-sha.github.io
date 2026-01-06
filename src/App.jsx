@@ -1,3 +1,4 @@
+// apps.jsx (updated; supports embedded Live Apps via iframe when `embed: true`)
 import { NavLink, Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -14,6 +15,23 @@ import NotFoundPage from "./routes/NotFoundPage.jsx";
 import { profile } from "./data/profile.js";
 import { asset } from "./lib/asset.js";
 
+/**
+ * NOTE:
+ * To embed apps on /apps page, update your data like:
+ *
+ * export const liveApps = [
+ *   {
+ *     title: "Dashing Agent",
+ *     url: "https://dashing-agent.github.io/",
+ *     description: "Live demo (embedded GitHub Pages app).",
+ *     embed: true,
+ *     height: 700,
+ *   },
+ * ];
+ *
+ * Then ensure LiveAppsPage renders iframe when app.embed === true.
+ */
+
 function NavItem({ to, children }) {
   return (
     <NavLink
@@ -23,7 +41,7 @@ function NavItem({ to, children }) {
           "rounded-full px-3 py-1 text-sm font-medium transition",
           isActive
             ? "bg-zinc-900 text-white"
-            : "text-zinc-700 hover:bg-zinc-100 hover:text-zinc-900"
+            : "text-zinc-700 hover:bg-zinc-100 hover:text-zinc-900",
         ].join(" ")
       }
     >
@@ -71,32 +89,32 @@ export default function App() {
       <header className="sticky top-0 z-50">
         <div className="mx-auto max-w-6xl px-4 py-3">
           <div className="flex items-center justify-between rounded-2xl border border-zinc-200 bg-white/80 px-4 py-2 shadow-sm backdrop-blur">
-          <NavLink to="/" className="flex items-center gap-3 font-semibold tracking-tight">
-            <img
-              src={asset("/avatar/profile.jpg")}
-              alt="Fahad Shaikh"
-              className="h-9 w-9 rounded-full object-cover border border-zinc-300"
-              loading="eager"
-              onError={(e) => (e.currentTarget.style.display = "none")}
-            />
-            <span className="hidden sm:inline">{profile.name}</span>
-          </NavLink>
+            <NavLink to="/" className="flex items-center gap-3 font-semibold tracking-tight">
+              <img
+                src={asset("/avatar/profile.jpg")}
+                alt="Fahad Shaikh"
+                className="h-9 w-9 rounded-full object-cover border border-zinc-300"
+                loading="eager"
+                onError={(e) => (e.currentTarget.style.display = "none")}
+              />
+              <span className="hidden sm:inline">{profile.name}</span>
+            </NavLink>
 
-          <nav className="flex items-center gap-4">
-            <NavItem to="/">Home</NavItem>
-            <NavItem to="/projects">Projects</NavItem>
-            <NavItem to="/experience">Experience</NavItem>
-            <NavItem to="/articles">Articles</NavItem>
-            <NavItem to="/research">Research</NavItem>
-            <NavItem to="/apps">Live Apps</NavItem>
-            <button
-              type="button"
-              onClick={goToContact}
-              className="rounded-full px-3 py-1 text-sm font-medium text-zinc-700 transition hover:bg-zinc-100 hover:text-zinc-900"
-            >
-              Contact
-            </button>
-          </nav>
+            <nav className="flex items-center gap-4">
+              <NavItem to="/">Home</NavItem>
+              <NavItem to="/projects">Projects</NavItem>
+              <NavItem to="/experience">Experience</NavItem>
+              <NavItem to="/articles">Articles</NavItem>
+              <NavItem to="/research">Research</NavItem>
+              <NavItem to="/apps">Live Apps</NavItem>
+              <button
+                type="button"
+                onClick={goToContact}
+                className="rounded-full px-3 py-1 text-sm font-medium text-zinc-700 transition hover:bg-zinc-100 hover:text-zinc-900"
+              >
+                Contact
+              </button>
+            </nav>
           </div>
         </div>
       </header>
