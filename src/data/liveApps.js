@@ -6,4 +6,12 @@ export const liveApps = [
     embed: true,
     height: 700,
   },
+  {
+    title: "Earnings Calls RAG Dashboard",
+    url: "https://earningsrag.netlify.app/",
+    description:
+      "LLM-powered earnings call analysis with transcript RAG, summaries, and market context.",
+    embed: true,
+    height: 900, // larger for dashboards & charts
+  },
 ];
