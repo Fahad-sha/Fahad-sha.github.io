@@ -10,7 +10,7 @@ export const earningsCallRag = {
 
   repoUrl: "https://github.com/Fahad-sha/Earnings-call-summerizer-RAG",
   // If you have a real live link (Netlify/HF/GH Pages), replace this:
-  liveUrl: "https://<your-live-link>/",
+  liveUrl: "https://earningsrag.netlify.app/",
 
   // Make sure this file exists in /public/images (or adjust to your setup)
   archImage: "/images/earnings-call-rag-arch.jpg",
