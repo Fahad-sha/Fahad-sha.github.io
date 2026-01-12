@@ -1,4 +1,4 @@
-// apps.jsx (updated; supports embedded Live Apps via iframe when `embed: true`)
+// src/App.jsx
 import { NavLink, Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -11,32 +11,9 @@ import ArticlesPage from "./routes/ArticlesPage.jsx";
 import ResearchPage from "./routes/ResearchPage.jsx";
 import LiveAppsPage from "./routes/LiveAppsPage.jsx";
 import NotFoundPage from "./routes/NotFoundPage.jsx";
-import AnalyticsTracker from "./AnalyticsTracker";
 
 import { profile } from "./data/profile.js";
 import { asset } from "./lib/asset.js";
-
-/**
- * NOTE:
- * To embed apps on /apps page, update your data like:
- *
- * export const liveApps = [
- *   {
- *     title: "Dashing Agent",
- *     url: "https://dashing-agent.github.io/",
- *     description: "Live demo (embedded GitHub Pages app).",
- *     embed: true,
- *     height: 700,
- *   },
- * ];
- *
- * Then ensure LiveAppsPage renders iframe when app.embed === true.
- */
-
-<BrowserRouter>
-  <AnalyticsTracker />
-  <App />
-</BrowserRouter>
 
 function NavItem({ to, children }) {
   return (
