@@ -31,6 +31,12 @@ import { asset } from "./lib/asset.js";
  *
  * Then ensure LiveAppsPage renders iframe when app.embed === true.
  */
+import AnalyticsTracker from "./AnalyticsTracker";
+
+<BrowserRouter>
+  <AnalyticsTracker />
+  <App />
+</BrowserRouter>
 
 function NavItem({ to, children }) {
   return (
