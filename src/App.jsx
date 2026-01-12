@@ -11,6 +11,7 @@ import ArticlesPage from "./routes/ArticlesPage.jsx";
 import ResearchPage from "./routes/ResearchPage.jsx";
 import LiveAppsPage from "./routes/LiveAppsPage.jsx";
 import NotFoundPage from "./routes/NotFoundPage.jsx";
+import AnalyticsTracker from "./AnalyticsTracker";
 
 import { profile } from "./data/profile.js";
 import { asset } from "./lib/asset.js";
@@ -31,7 +32,6 @@ import { asset } from "./lib/asset.js";
  *
  * Then ensure LiveAppsPage renders iframe when app.embed === true.
  */
-import AnalyticsTracker from "./AnalyticsTracker";
 
 <BrowserRouter>
   <AnalyticsTracker />
